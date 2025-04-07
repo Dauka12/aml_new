@@ -3,11 +3,12 @@ import { AnimatePresence } from 'framer-motion';
 import { lazy, Suspense } from 'react';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
-import Header from './components/common/Header';
+import Header from '@/components/common/Header';
 
 // Ленивые компоненты для страниц
 const Home = lazy(() => import('./pages/Home'));
 const Courses = lazy(() => import('./pages/Courses'));
+const Contacts =lazy(() => import('./pages/Contacts'));
 const BoardofDirectors = lazy(() => import('./pages/BoardofDirectors'));
 
 // Фоллбек при загрузке
@@ -28,7 +29,6 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/courses" element={<Courses />} />
-                <Route path="/board-of-directors" element={<BoardofDirectors />} />
               </Routes>
             </Suspense>
           </AnimatePresence>
