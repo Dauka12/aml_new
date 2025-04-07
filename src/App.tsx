@@ -2,11 +2,12 @@ import { AnimatePresence } from 'framer-motion';
 import { lazy, Suspense } from 'react';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
-import Header from './components/common/Header';
+import Header from '@/components/common/Header';
 
 // Lazy loading для страниц
 const Home = lazy(() => import('./pages/Home'));
 const Courses = lazy(() => import('./pages/Courses'));
+const Contacts =lazy(() => import('./pages/Contacts'));
 
 // Fallback компонент для ленивой загрузки
 const PageLoader = () => (
@@ -26,6 +27,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/courses" element={<Courses />} />
+                <Route path="/contacts" element={<Contacts/>} />
               </Routes>
             </Suspense>
           </AnimatePresence>
