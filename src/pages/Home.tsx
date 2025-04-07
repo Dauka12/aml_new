@@ -44,7 +44,7 @@ const Home = () => {
   });
 
   return (
-    <div className="relative overflow-hidden bg-gray-900 text-white min-h-screen">
+    <div className="relative bg-gray-900 text-white min-h-screen">
       {/* Декоративные элементы заднего фона */}
       {circles.map((circle) => (
         <motion.div
@@ -123,7 +123,7 @@ const Home = () => {
 
       {/* Волна внизу */}
       <motion.div
-        className="absolute bottom-0 left-0 w-full overflow-hidden"
+        className="absolute bottom-0 left-0 w-full"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5 }}

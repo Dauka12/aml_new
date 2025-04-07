@@ -110,7 +110,7 @@ const Card: React.FC<CardProps> = ({
               </svg>
             </span>
           </div>
-          <div className="relative w-[60%] h-full rounded-lg overflow-hidden">
+          <div className="relative w-[60%] h-full rounded-lg">
             <motion.div className="w-full h-full" style={{ scale: imageScale }}>
               <img
                 src={url}

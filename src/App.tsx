@@ -29,6 +29,8 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/courses" element={<Courses />} />
+                <Route path="/board-of-directors" element={<BoardofDirectors />} />
+                <Route path="/contacts" element={<Contacts />} />                
               </Routes>
             </Suspense>
           </AnimatePresence>

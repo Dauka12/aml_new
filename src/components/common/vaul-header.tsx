@@ -65,7 +65,7 @@ export function HeaderDrawer({
             dismissible={isDesktop ? false : true}
             onOpenChange={(val) => {
               setOpen(val);
-              document.body.style.overflow = val ? 'hidden' : '';
+              document.body.style.overflow = val ? '' : '';
             }}
           >
 

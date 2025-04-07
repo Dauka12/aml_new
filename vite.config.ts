@@ -3,12 +3,12 @@ import path from 'path'
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
 
-// https://vitejs.dev/config/
+// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(),tailwindcss()],
+  plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
-      '@': '/src',  // Убедитесь, что алиас настроен на папку src
+      '@': path.resolve(__dirname, './src'), // alias
     },
   },
-});
+})

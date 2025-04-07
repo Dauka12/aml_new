@@ -17,7 +17,7 @@ const Courses = () => {
                 {[1, 2, 3, 4, 5, 6].map((item) => (
                     <motion.div
                         key={item}
-                        className="bg-white rounded-lg shadow-md overflow-hidden"
+                        className="bg-white rounded-lg shadow-md"
                         whileHover={{ y: -5, transition: { duration: 0.2 } }}
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
