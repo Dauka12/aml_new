@@ -6,7 +6,7 @@ const Courses = () => {
 
     return (
         <motion.div
-            className="container mx-auto py-12 px-4"
+            className="container mx-auto py-12 px-4 pt-20"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}

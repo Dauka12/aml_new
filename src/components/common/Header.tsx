@@ -30,6 +30,7 @@ const navLinks = [
   { label: 'Courses', href: '/courses' },
   { label: 'Templates', href: '/templates' },
   { label: 'Open Source', href: '/open-source' },
+  { label: 'Contacts', href: '/Contacts' },
 ];
 
 export default function Header() {
