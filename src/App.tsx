@@ -10,6 +10,7 @@ const Home = lazy(() => import('./pages/Home'));
 const Courses = lazy(() => import('./pages/Courses'));
 const Contacts =lazy(() => import('./pages/Contacts'));
 const BoardofDirectors = lazy(() => import('./pages/BoardofDirectors'));
+const Structure = lazy(() => import('./pages/Structure'));
 
 // Фоллбек при загрузке
 const PageLoader = () => (
@@ -30,7 +31,8 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/courses" element={<Courses />} />
                 <Route path="/board-of-directors" element={<BoardofDirectors />} />
-                <Route path="/contacts" element={<Contacts />} />                
+                <Route path="/contacts" element={<Contacts />} />
+                <Route path="/Structure" element={<Structure />} />
               </Routes>
             </Suspense>
           </AnimatePresence>

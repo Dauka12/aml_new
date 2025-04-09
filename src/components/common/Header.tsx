@@ -9,20 +9,20 @@ import {
   HeaderDrawer,
 } from '@/components/common/vaul-header';
 
-const items = [
-  {
-    id: 1,
-    classname: 'bg-gradient-to-l from-red-400 to-orange-500',
-  },
-  {
-    classname: 'bg-gradient-to-r from-blue-300 to-blue-800',
-    id: 2,
-  },
-  {
-    classname: 'bg-gradient-to-tl from-amber-500 to-yellow-400',
-    id: 3,
-  },
-];
+// const items = [
+//   {
+//     id: 1,
+//     classname: 'bg-gradient-to-l from-red-400 to-orange-500',
+//   },
+//   {
+//     classname: 'bg-gradient-to-r from-blue-300 to-blue-800',
+//     id: 2,
+//   },
+//   {
+//     classname: 'bg-gradient-to-tl from-amber-500 to-yellow-400',
+//     id: 3,
+//   },
+// ];
 
 const navLinks = [
   { label: 'Home', href: '/Home' },
@@ -31,6 +31,7 @@ const navLinks = [
   { label: 'Templates', href: '/templates' },
   { label: 'Open Source', href: '/open-source' },
   { label: 'Contacts', href: '/Contacts' },
+  { label: 'Structure', href: '/Structure' },
 ];
 
 export default function Header() {
@@ -100,16 +101,6 @@ export default function Header() {
                     ))}
                   </ul>
                 </nav>
-
-                {/* Цветные блоки */}
-                <div className="grid grid-cols-3 gap-4 py-4 w-full md:w-auto">
-                  {items.map((item) => (
-                    <figure
-                      key={item.id}
-                      className={`${item.classname} inline-block group w-full h-40 md:h-52 relative rounded-md`}
-                    ></figure>
-                  ))}
-                </div>
               </div>
             </div>
           </DrawerContent>
